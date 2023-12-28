@@ -264,13 +264,51 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    background-color: blue;
 }
 
 .imgslateral{
-    background-color: black;
-    width: 100px;
-    height: 100px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    width: 280px;
+    border-radius: 12px;
+
     margin: 5px;
+    overflow: hidden;
+}
+.imgslateral img{
+    width: 100%;
+}
+
+#esquerda,#direita{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#esquerda{
+    float: left;
+    position: relative;
+    left: -60px;
+}
+#direita{
+    float: right;
+    position: relative;
+    right: -60px;
+}
+
+
+#esquerda .rotate1 {
+    transform: rotate(12deg);
+}
+
+#esquerda .rotate2 {
+    transform: rotate(-18deg);
+}
+
+#direita .rotate3 {
+    transform: rotate(15deg);
+}
+
+#direita .rotate4 {
+    transform: rotate(-20deg);
 }
